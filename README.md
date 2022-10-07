@@ -6,7 +6,7 @@ Simple emailnator.com wrapper made in Go.
 
 ## Install
 
-- `go get https://github.com/ox-y/GoGmailnator`
+- `go get github.com/ox-y/GoGmailnator`
 
 ## Usage
 
