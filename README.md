@@ -6,7 +6,7 @@ Simple emailnator.com wrapper made in Go.
 
 ## Usage
 
-```
+```go
 package main
 
 import (
