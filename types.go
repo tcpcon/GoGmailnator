@@ -1,4 +1,4 @@
-package gmailnator
+package GoGmailnator
 
 import "fmt"
 
