@@ -57,7 +57,14 @@ func (session Session) RetrieveMail(email string) ([]Email, error) {
     if err != nil {
         return emails, err
     }
-
+	
+	if string(body) == "[]" {
+		return emails, &RequestErr{
+			StatusCode: resp.StatusCode,
+			Err:        errors.New("invalid response, possible invalid email"),
+		}
+	}
+	
 	var jsonResponse RetrieveEmailsJsonResponse
 
 	err = json.Unmarshal(body, &jsonResponse)
