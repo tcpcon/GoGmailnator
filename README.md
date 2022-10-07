@@ -4,6 +4,10 @@ Simple emailnator.com wrapper made in Go.
 - Create sessions, generate emails, receive mail
 - Proxy Support
 
+## Install
+
+- `go get https://github.com/ox-y/GoGmailnator`
+
 ## Usage
 
 ```go
