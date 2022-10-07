@@ -28,5 +28,5 @@ type RequestErr struct {
 }
 
 func (r *RequestErr) Error() string {
-	return fmt.Sprintf("Status Code %d: Err %v", r.StatusCode, r.Err)
+	return fmt.Sprintf("Status Code %d: Err: %v", r.StatusCode, r.Err)
 }
